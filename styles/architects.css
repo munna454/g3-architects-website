@@ -113,6 +113,48 @@ main{
 /* teams styles end */
 
 /* featured style started */
+.feature-container{
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+    margin-left: 40px;
+}
+.feature-container .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-content .card{
+    padding: 1px;
+    margin-bottom: 20px;
+   
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-image img{
+    height: 90%;
+    margin-left: 90px;
+}
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 340px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin: 0px;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
+}
+/* feature style end */
+
+    
 
 
 /* fact section */
@@ -156,6 +198,20 @@ main{
     
 }
 /* sponsors style end */
+/* footer style start */
+footer{
+    border-radius: 8px;
+    background: #FFF4E7;
+    height: 70px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;
+    color: #424242;
+    padding-top: 10px;
+    margin-bottom: 100px;
+    margin-left:  70px;
+    margin-right: 70px;
+}
 
 
 
@@ -168,7 +224,8 @@ main{
     nav,
     .teams-container,
     .fact-card-container,
-    .sponsors-img-container
+    .sponsors-img-container, 
+    .feature-container
     {
         flex-direction: column;
     }    
@@ -182,6 +239,20 @@ main{
     .fact-card-container{
         gap: 20px;      
     }
+    .feature-image img{
+        width: 100%;
+        margin-left: 0px;
+        
+    }
+    .ten-years-badge{
+        position: static;
+        width: 90%;
+        padding: 0;
+    }
+    footer{
+        font-size: 1rem;
+        padding-top: 0;
+    }
     }  
 
 /* Tablet or Medium Devices */
@@ -192,7 +263,8 @@ main{
     nav,
     .teams-container,
     .fact-card-container,
-    .sponsors-img-container
+    .sponsors-img-container,
+    .feature-container
     {
         flex-direction: column;   
 }
@@ -206,4 +278,16 @@ main{
     .fact-card-container{
     gap: 20px;      
 } 
+   .feature-image img{
+    width: 100%;
+    margin-left: 0px;
+}
+.ten-years-badge{
+    position: static;   
+    padding: 0;
+}
+footer{
+    font-size: 1rem;
+    padding-top: 2px;
+}
 }
